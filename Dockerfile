@@ -1,7 +1,9 @@
-FROM alpine:3.12
-RUN apk add --update --no-cache libreoffice-writer
+FROM ubuntu:focal
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update \
+    && apt-get install -y libreoffice-writer \
+    && rm -rf /var/lib/apt/lists/*
 EXPOSE 2002
-VOLUME /data
 CMD [ "soffice",            \
     "--headless",           \
     "--invisible",          \
