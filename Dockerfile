@@ -1,5 +1,5 @@
 FROM alpine:3.12
-RUN apk add --update --no-cache libreoffice
+RUN apk add --update --no-cache libreoffice-writer
 EXPOSE 2002
 VOLUME /data
 CMD [ "soffice",            \
