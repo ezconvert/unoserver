@@ -10,5 +10,5 @@ CMD [ "soffice",            \
     "--nofirststartwizard", \
     "--nologo",             \
     "--norestore",          \
-    "--accept=socket,host=0.0.0.0,port=2002,tcpNoDelay=1;urp;StarOffice.ComponentContext"
+    "--accept=socket,host=0.0.0.0,port=2002,tcpNoDelay=1;urp;StarOffice.ComponentContext" \
 ]
